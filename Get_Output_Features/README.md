@@ -1,4 +1,6 @@
 # Visualization of layers' output
+**Code:**
+```
 from tensorflow.keras import backend as K
 train_data =[(example.numpy(), label.numpy()) for example, label in train_dataset]
 layerIndex = 6
@@ -15,6 +17,7 @@ for i in range(10):
    axs[i,j].axis("off")
 
 #plt.imshow(layerOutput[0,:,10,:,60])
+```
 ![image](https://github.com/Ali-Mohammadnezhad/Keras_Colab/assets/110347490/f5aef679-08c3-4ba0-a116-c7b333faef2e)
 
 # Visualization of layers' output
